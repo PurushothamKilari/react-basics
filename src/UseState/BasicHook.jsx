@@ -3,7 +3,7 @@ import React,{useState} from "react";
 
 
 const Index =()=> {
-    const [count,setCount]=useState(0)
+    const [count,setCount]=useState(0);
 
     const incrementCount=()=>{
         setCount((prev)=> prev+1);
@@ -13,13 +13,16 @@ const Index =()=> {
     }
   return (
     <>
+    <div  style={{ display: "flex", alignContent: "center", backgroundColor:'pink' }} > 
       <h1>Hooks Basic</h1>
-      <div
-        style={{ alignContent: "center", margin: "200px", padding: "200px", color:'red' }}
+      <div style={{fontSize:"40px", marginTop:'-10px'}}
       >
-        <button onClick={()=> setCount(count-1)}>-</button>
+        <br>
+        </br>
+        <button style={{width:"40px", marginTop:'-10px'}} onClick={()=> setCount(count-1)}>-</button>
         <span>{count}</span>
-        <button onClick={incrementCount}>+</button>
+        <button style={{width:"40px", marginTop:'-10px'}} onClick={incrementCount}>+</button>
+      </div>
       </div>
     </>
   );
